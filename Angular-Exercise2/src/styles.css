@@ -4,6 +4,7 @@ html,
 body {
   height: 100vh;
 }
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -11,6 +12,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: rgb(101, 111, 164);
+  background: radial-gradient(
+    circle,
+    rgba(101, 111, 164, 1) 0%,
+    rgba(70, 117, 252, 1) 100%
+  );
+  color: #5de8fc;
 }
 
 /* slider track thickness */
@@ -25,30 +33,30 @@ body {
 
 /* slider track on movement */
 .mat-slider.mat-slider-horizontal .mat-slider-track-fill {
-  background-color: blue;
+  background-color: #4675fc;
 }
 
 /* slider button on movement */
 .mat-accent .mat-slider-thumb {
   height: 30px;
   width: 30px;
-  background-color: white;
-  border: solid 2px gray;
+  background-color: #656fa4;
+  border: solid 2px #4675fc;
   bottom: -20px;
   right: -20px;
 }
 
 /* slider button at start */
 .mat-slider-min-value:not(.mat-slider-thumb-label-showing) .mat-slider-thumb {
-  background-color: red;
+  background-color: #4675fc;
 }
 
 /* slide-toggle unchecked */
 .mat-slide-toggle .mat-slide-toggle-bar {
-  background-color: rgba(255, 64, 129, 0.54);
+  background-color: rgba(70, 117, 252, 1);
 }
 
 /* slide=toggle checked */
 .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
-  background-color: rgba(255, 64, 129, 0.54);
+  background-color: rgba(101, 111, 164, 1);
 }
