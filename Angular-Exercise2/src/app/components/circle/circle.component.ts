@@ -25,7 +25,6 @@ export class CircleComponent implements OnInit {
     return this.newSize;
   }
 
-  // ['border-bottom']: '3px solid lightgreen';
   toggleEvent() {
     this.isCircle = !this.isCircle;
   }
