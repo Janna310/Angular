@@ -3,7 +3,7 @@
     <div
       [ngStyle]="newSize"
       class="circle"
-      [style.border-radius]="isCircle ? '50%' : '0%'"
+      [ngClass]="isCircle ? 'is-circle' : 'not-a-circle'"
     ></div>
   </div>
 
@@ -23,7 +23,6 @@
     <!-- <input type="number" #diameter />
     <button (click)="changeDiameter(diameter.value)">New Diameter</button> -->
 
-    Is Circle?
     <div class="toggle">
       <span id="left">Circle</span>
       <mat-slide-toggle (change)="toggleEvent()"></mat-slide-toggle>

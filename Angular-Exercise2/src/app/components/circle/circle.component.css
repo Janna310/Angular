@@ -14,9 +14,18 @@ section {
 .circle {
   height: 10px;
   width: 10px;
+}
+
+.is-circle {
   border-radius: 50%;
   background-color: #4675fc;
-  border: 2px solid #5de8fc;
+  border: 3px solid #5de8fc;
+}
+
+.not-a-circle {
+  background-color: #5de8fc;
+  border: 3px solid #4675fc;
+  border-radius: 0%;
 }
 
 #displayValue {
