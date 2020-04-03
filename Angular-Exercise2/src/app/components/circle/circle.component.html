@@ -1,6 +1,10 @@
 <section>
   <div class="circle-container">
-    <div class="circle" [style.border-radius]="isCircle ? '50%' : '0%'"></div>
+    <div
+      [ngStyle]="newSize"
+      class="circle"
+      [style.border-radius]="isCircle ? '50%' : '0%'"
+    ></div>
   </div>
 
   <div class="form-container">

@@ -9,17 +9,21 @@ export class CircleComponent implements OnInit {
   diameter = 1;
   isCircle = true;
   constructor() {}
+  newSize = {};
 
   ngOnInit(): void {}
 
-  changeDiameter(event) {
-    this.diameter = event.value;
-  }
+  changeDiameter(newDiameter) {
+    console.log(newDiameter);
 
-  theSize = {
-    ['width']: this.diameter + 'px',
-    ['height']: this.diameter + 'px',
-  };
+    this.newSize = {
+      ['width']: `${newDiameter}px`,
+      ['height']: `${newDiameter}px`,
+    };
+    console.log(this.newSize);
+
+    return this.newSize;
+  }
 
   // ['border-bottom']: '3px solid lightgreen';
   toggleEvent() {
