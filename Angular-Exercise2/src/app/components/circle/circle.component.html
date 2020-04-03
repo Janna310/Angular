@@ -1,1 +1,34 @@
-<p>circle works!</p>
+<section>
+  <div class="circle-container">
+    <div class="circle" [style.border-radius]="isCircle ? '50%' : '0%'"></div>
+  </div>
+
+  <div class="form-container">
+    <!-- <mat-slider
+      #diameter
+      (change)="changeDiameter($event)"
+      [value]="diameter"
+      class="slider"
+      min="1"
+      max="500"
+      step="1"
+      value="1"
+      defaultValue="1"
+    ></mat-slider> -->
+    <input type="number" #diameter />
+    <button (click)="changeDiameter(diameter.value)"></button>
+
+    <!-- <span id="displayValue">Diameter: {{ diameter.value }}px</!-->
+    --> Is Circle?
+    <div class="toggle">
+      <span>Circle</span>
+      <mat-slide-toggle (change)="toggleEvent()"></mat-slide-toggle>
+      <span>Not a Circle</span>
+    </div>
+  </div>
+</section>
+<!-- [ngStyle]="{ width: diameter, height: diameter }" -->
+
+<!-- <mat-slider #gridsize 
+(change)="updateSetting($event)" 
+[value]="gridsize"></mat-slider> -->
