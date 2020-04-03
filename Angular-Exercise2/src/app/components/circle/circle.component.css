@@ -1,3 +1,28 @@
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  position: relative;
+}
+
+.circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+/* #displayValue {
+  height: 10px;
+  width: 10px;
+} */
+
 .form-container {
   display: flex;
   flex-direction: column;
@@ -9,10 +34,6 @@
 
 .slider {
   width: 400px;
-}
-
-#displayValue {
-  margin-bottom: 10px;
 }
 
 button {
@@ -28,22 +49,4 @@ input[type="number"] {
   padding: 5px;
   width: 100px;
   margin-bottom: 10px;
-}
-
-.circle {
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background-color: red;
-}
-
-.circle-container {
-  padding: 1rem;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }

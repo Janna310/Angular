@@ -4,12 +4,11 @@
       [ngStyle]="newSize"
       class="circle"
       [style.border-radius]="isCircle ? '50%' : '0%'"
-    >
-      <span id="displayValue">Diameter: {{ diameter.value }}px</span>
-    </div>
+    ></div>
   </div>
 
   <div class="form-container">
+    <span id="displayValue">Diameter: {{ diameter.value }}px</span>
     <mat-slider
       #diameter
       (input)="changeDiameter($event)"
