@@ -40,8 +40,8 @@ body {
 .mat-accent .mat-slider-thumb {
   height: 30px;
   width: 30px;
-  background-color: #656fa4;
-  border: solid 2px #4675fc;
+  background-color: #a6b0e4;
+  border: solid 2px #5de8fc;
   bottom: -20px;
   right: -20px;
 }
@@ -49,6 +49,7 @@ body {
 /* slider button at start */
 .mat-slider-min-value:not(.mat-slider-thumb-label-showing) .mat-slider-thumb {
   background-color: #4675fc;
+  border: solid 2px #5de8fc;
 }
 
 /* slide-toggle unchecked */

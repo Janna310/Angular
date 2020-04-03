@@ -57,9 +57,9 @@ mat-slide-toggle {
 }
 
 #left {
-  flex: 3;
+  font-size: 1.25rem;
 }
 
 #right {
-  flex: 3;
+  font-size: 1.25rem;
 }
