@@ -14,13 +14,10 @@ export class CircleComponent implements OnInit {
   ngOnInit(): void {}
 
   changeDiameter(newDiameter) {
-    console.log(newDiameter);
-
     this.newSize = {
-      ['width']: `${newDiameter}px`,
-      ['height']: `${newDiameter}px`,
+      ['width']: `${newDiameter.value}px`,
+      ['height']: `${newDiameter.value}px`,
     };
-    console.log(this.newSize);
 
     return this.newSize;
   }

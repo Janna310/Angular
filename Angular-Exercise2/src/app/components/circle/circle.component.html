@@ -4,13 +4,15 @@
       [ngStyle]="newSize"
       class="circle"
       [style.border-radius]="isCircle ? '50%' : '0%'"
-    ></div>
+    >
+      <span id="displayValue">Diameter: {{ diameter.value }}px</span>
+    </div>
   </div>
 
   <div class="form-container">
-    <!-- <mat-slider
+    <mat-slider
       #diameter
-      (change)="changeDiameter($event)"
+      (input)="changeDiameter($event)"
       [value]="diameter"
       class="slider"
       min="1"
@@ -18,11 +20,10 @@
       step="1"
       value="1"
       defaultValue="1"
-    ></mat-slider> -->
-    <input type="number" #diameter />
-    <button (click)="changeDiameter(diameter.value)">New Diameter</button>
+    ></mat-slider>
+    <!-- <input type="number" #diameter />
+    <button (click)="changeDiameter(diameter.value)">New Diameter</button> -->
 
-    <!-- <span id="displayValue">Diameter: {{ diameter.value }}px</!-->
     Is Circle?
     <div class="toggle">
       <span>Circle</span>
