@@ -6,12 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./circle.component.css'],
 })
 export class CircleComponent implements OnInit {
-  diameter = 1;
   isCircle = true;
   constructor() {}
   newSize = {};
+  diameter;
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.diameter = 0;
+  }
 
   changeDiameter(newDiameter) {
     this.newSize = {
