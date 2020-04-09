@@ -1,0 +1,9 @@
+<!-- Input the name into service -->
+<form class="form" (ngSubmit)="setName(inputValue)">
+  <input #inputValue type="text" name="name" placeholder="Name" />
+  <input type="submit" value="Name" />
+</form>
+<hr />
+<!-- get name from service-->
+<h1>Name: {{ savedName }}</h1>
+<button (click)="getName()">Load</button>
