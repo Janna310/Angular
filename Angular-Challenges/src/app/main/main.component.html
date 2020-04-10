@@ -1,3 +1,13 @@
-<p>
-  {{ responseData?.title }}
-</p>
+<p>Array Title: {{ responseData?.title }}</p>
+<p>Array Language: {{ responseData?.language }}</p>
+<p>Posts length: {{ responseData?.posts.length }}</p>
+<p>First Post title: {{ (responseData?.posts)[0].title }}</p>
+
+<ul *ngFor="let postTitle of responseData?.posts">
+  <ul>
+    {{
+      postTitle.title
+    }}
+    <li *ngFor="let tag of postTitle.tags">{{ tag }}</li>
+  </ul>
+</ul>

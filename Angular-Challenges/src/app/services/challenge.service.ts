@@ -8,7 +8,7 @@ export class ChallengeService {
   constructor(private httpClient: HttpClient) {}
 
   getData() {
-    const url = 'https://www.reddit.com/r/aww/.json';
+    const url = 'https://grandcircusco.github.io/demo-apis/blog-posts.json';
 
     return this.httpClient.get(url);
   }
