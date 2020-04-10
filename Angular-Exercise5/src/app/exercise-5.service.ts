@@ -6,11 +6,11 @@ import { Injectable } from '@angular/core';
 export class Exercise5Service {
   name: string;
 
-  getName() {
+  getName(): any {
     return this.name;
   }
 
-  setName(formName) {
+  setName(formName): void {
     this.name = formName;
   }
 }

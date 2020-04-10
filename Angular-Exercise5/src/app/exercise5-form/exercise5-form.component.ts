@@ -17,7 +17,7 @@ export class Exercise5FormComponent implements OnInit {
     this.savedName = this.exercise5Service.getName();
   }
 
-  setName(inputValue) {
+  setName(inputValue): void {
     this.exercise5Service.setName(inputValue.value);
     inputValue.value = '';
   }
