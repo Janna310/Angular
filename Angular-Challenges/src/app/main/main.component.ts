@@ -14,7 +14,7 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
     this.challengeService.getData().subscribe((response) => {
       this.responseData = response;
-      console.log(this.responseData);
+      console.log(this.responseData.data);
     });
   }
 }
